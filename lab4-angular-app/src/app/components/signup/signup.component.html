@@ -22,8 +22,8 @@
                         <div class="form-group">
                             <label>Student ID</label>
                             <input type="text" class="form-control" formControlName='stdid'>
-                            <div *ngIf="stdid?.invalid && (stdid?.dirty || stdid?.touched)" class="alert alert-danger">
-                                <div *ngIf="email?.errors?.['required']">
+                            <div *ngIf="stdid?.invalid && (stdid?.touched)" class="alert alert-danger">
+                                <div *ngIf="stdid?.errors?.['required']">
                                     Student ID is required.
                                 </div>
                                 <div *ngIf="stdid?.errors?.['pattern']">
