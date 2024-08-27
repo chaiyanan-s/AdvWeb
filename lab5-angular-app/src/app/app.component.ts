@@ -8,9 +8,6 @@ import { NgstyleComponent } from './components/ngstyle/ngstyle.component';
 export class AppComponent implements OnInit{
 
   title = 'lab5-angular-app';
-
-  @ViewChild(NgstyleComponent)
-  NgStleComponent!: NgstyleComponent;
   
   parentColorProperty!: string;
 
